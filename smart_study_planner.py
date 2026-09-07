@@ -43,9 +43,9 @@ def view_sessions(sessions):
         print("\nNo study sessions recorded.")
         return
 
-    print("\n" + "-" * 88)
+    print("\n" + "-" * 84)
     print(f"{'No.':<5}{'Subject':<20}{'Topic':<25}{'Date':<15}{'Minutes':<10}{'Class':<10}")
-    print("-" * 88)
+    print("-" * 84)
 
     for number, session in enumerate(sessions, start=1):
         duration = session["duration"]
@@ -59,7 +59,7 @@ def view_sessions(sessions):
             f"{classification:<10}"
         )
 
-    print("-" * 88)
+    print("-" * 84)
 
 
 def search_by_subject(sessions, subject):
@@ -73,9 +73,9 @@ def search_by_subject(sessions, subject):
         return
 
     print(f"\nSessions for subject: {subject}")
-    print("-" * 75)
+    print("-" * 68)
     print(f"{'No.':<5}{'Topic':<30}{'Date':<20}{'Minutes':<10}{'Class':<10}")
-    print("-" * 75)
+    print("-" * 68)
 
     total_minutes = 0
     for number, session in enumerate(matches, start=1):
@@ -89,7 +89,7 @@ def search_by_subject(sessions, subject):
             f"{classify_session(duration):<10}"
         )
 
-    print("-" * 75)
+    print("-" * 68)
     print(f"Total time spent on {subject}: {total_minutes / 60:.2f} hours")
 
 
@@ -113,7 +113,7 @@ def study_statistics(sessions):
         subject_totals[key]["minutes"] += session["duration"]
 
     print("\nSTUDY STATISTICS")
-    print("-" * 50)
+    print("-" * 45)
     print(f"Total hours studied overall: {total_minutes / 60:.2f}")
 
     print("\nTotal hours studied per subject:")
