@@ -1,7 +1,5 @@
  #Smart Study Planner
-
 FILE_NAME = "study_log.txt"
-
 
 def classify_session(duration):
     """Classify a study session according to its duration."""
