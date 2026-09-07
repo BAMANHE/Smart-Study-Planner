@@ -1,4 +1,4 @@
- Smart Study Planner
+ #Smart Study Planner
 FILE_NAME = "study_log.txt"
 
 
