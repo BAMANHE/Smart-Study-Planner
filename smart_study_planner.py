@@ -1,7 +1,4 @@
-# Smart Study Planner
-# Module: 1203 ST - Programming Fundamentals
-# Individual Assignment
-
+ Smart Study Planner
 FILE_NAME = "study_log.txt"
 
 
